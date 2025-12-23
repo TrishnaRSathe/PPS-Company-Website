@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | PPS</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{background:#fff;color:#222}
+
+/* TOP BAR */
+.top-bar{
+  background:#9b0000;
+  color:#fff;
+  padding:6px 30px;
+  font-size:13px;
+  display:flex;
+  justify-content:space-between;
+}
+
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 30px;
+  border-bottom:1px solid #eee;
+}
+header nav a{
+  margin:0 12px;
+  font-weight:600;
+  text-decoration:none;
+  color:#000;
+}
+
+/* BANNER */
+.banner{
+  background:url("https://images.unsplash.com/photo-1518770660439-4636190af475") center/cover no-repeat;
+  padding:80px 20px;
+  color:#fff;
+  text-align:center;
+}
+.banner h1{font-size:40px;margin-bottom:10px}
+
+/* GET IN TOUCH */
+.touch{
+  padding:60px 20px;
+  text-align:center;
+}
+.touch h2{margin-bottom:40px}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+  max-width:1100px;
+  margin:auto;
+}
+.card{
+  background:#3f556b;
+  color:#fff;
+  padding:30px 20px;
+}
+.card h4{margin:15px 0}
+
+/* MAP */
+.map iframe{
+  width:100%;
+  height:350px;
+  border:0;
+}
+
+/* FORM */
+.form-section{
+  padding:60px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+.form-section h2{margin-bottom:30px}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+.form-grid input,
+textarea{
+  padding:12px;
+  width:100%;
+  border:1px solid #ccc;
+}
+textarea{grid-column:1/-1;height:140px}
+
+button{
+  background:#9b0000;
+  color:#fff;
+  border:none;
+  padding:12px 30px;
+  margin-top:20px;
+  cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+  background:#000;
+  color:#aaa;
+  padding:50px 20px;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
+  max-width:1100px;
+  margin:auto;
+}
+footer h4{color:#fff;margin-bottom:15px}
+footer a{color:#aaa;text-decoration:none;display:block;margin-bottom:6px}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  header{flex-direction:column;gap:10px}
+  .form-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<div class="top-bar">
+  <div>Call Us: +91 90280 86501</div>
+  <div>Email Us: marketing@pprecast.com</div>
+</div>
+
+<header>
+  <h2>PPS</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="blog.html">Blogs</a>
+    
+  </nav>
+</header>
+
+<section class="banner">
+  <h1>CONTACT US</h1>
+  <p>Home / Contact Us</p>
+</section>
+
+<section class="touch">
+  <h2>GET IN TOUCH</h2>
+  <div class="cards">
+    <div class="card">
+      <h4>VISIT OUR OFFICE</h4>
+      <p>First Floor, Service Building, BAIF Bhavan,<br>
+      Dr. Manibhai Desai Nagar, Warje,<br>
+      Pune 411058, India</p>
+    </div>
+    <div class="card">
+      <h4>EMAIL US</h4>
+      <p>marketing@pprecast.com<br>hr@ppspl.in</p>
+    </div>
+    <div class="card">
+      <h4>CALL US</h4>
+      <p>+91 20-2523 2858<br>+91 20-2523 5885</p>
+    </div>
+  </div>
+</section>
+
+<section class="map">
+  <iframe
+    src="https://www.google.com/maps?q=BAIF%20Bhavan%20Warje%20Pune&output=embed">
+  </iframe>
+</section>
+
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>PPS</h4>
+      <p>ISO 9001:2015 Certified</p>
+      <p>Pune, India</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+     
+    </div>
+    <div>
+      <h4>Services</h4>
+      <a href="#">Structural Engineering</a>
+      <a href="#">BIM</a>
+      <a href="#">PMC</a>
+      <a href="#">Architectural Design</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

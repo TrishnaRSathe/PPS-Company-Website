@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | PPS Learning</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #fff;
+      color: #222;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* TOP BAR */
+    .topbar {
+      background: #9b0000;
+      color: #fff;
+      font-size: 13px;
+      padding: 6px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      border-bottom: 1px solid #eee;
+    }
+
+    nav a {
+      margin: 0 12px;
+      font-weight: 600;
+    }
+
+    /* ABOUT SECTION */
+    .about {
+      padding: 60px 30px;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .about h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      line-height: 1.7;
+      color: #555;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    /* TEAM */
+    .section-title {
+      text-align: center;
+      margin: 80px 0 40px;
+      font-size: 28px;
+    }
+
+    .team {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 30px 60px;
+    }
+
+    .card {
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      max-width: 220px;
+      border-radius: 6px;
+    }
+
+    .card h4 {
+      margin: 15px 0 5px;
+      text-transform: uppercase;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    /* STATS */
+    .stats {
+      background: #111;
+      color: #fff;
+      padding: 50px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      text-align: center;
+    }
+
+    .stats h2 {
+      color: #f5c400;
+      margin-bottom: 5px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #000;
+      color: #bbb;
+      padding: 40px 30px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .team {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .about {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <div>Call us: +91 90280 86501</div>
+  <div>Email: info@ppslearning.com</div>
+</div>
+
+<header>
+  <h2>PPS Learning</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="about">
+  <div>
+    <h1>Solving Civil Engineering Challenges with Innovation</h1>
+    <p>
+      PPS Learning is dedicated exclusively to Civil Engineering education and professional training.
+      We empower students, site engineers, and professionals with practical knowledge, software skills,
+      and industry-oriented learning.
+    </p>
+    <p>
+      Our programs are designed by experienced civil engineers focusing on real-world applications,
+      construction practices, and design excellence.
+    </p>
+  </div>
+  <img src="https://t4.ftcdn.net/jpg/03/33/09/45/360_F_333094597_8WdnUbpBaNg0HPLlXe9BFVhQzAnQPV6O.jpg" alt="Civil Engineering" />
+</section>
+
+<h2 class="section-title">Meet Our Management Team</h2>
+
+<section class="team">
+
+  <div class="card">
+    <img src="https://ppspl.com/admin/team/20250416175952.jpg" />
+    <h4>Mangesh Hardas</h4>
+    <p>
+      Mangesh holds a Master's Degree (M.Tech.) in Civil Engineering
+      (Specialization in Earthquake Engineering) from IIT Roorkee.
+      He also holds an advanced diploma in Computer Science from C-DAC, Pune.
+      With over 32 years of expertise, the last 19 years have focused on
+      offshore Civil and Precast Engineering business development.
+    </p>
+  </div>
+
+  <div class="card">
+    <img src="https://ppspl.com/admin/team/20250416180249.jpg" />
+    <h4>Charudatta Kulkarni</h4>
+    <p>
+      Charudatta holds a Master's Degree (M.E.) in Civil Engineering
+      with specialization in Structural Engineering. With more than
+      28 years of experience, he has spent the last 19 years exclusively
+      in offshore (US) Civil and Precast Engineering projects and is known
+      for his strong organizational and leadership skills.
+    </p>
+  </div>
+
+  <div class="card">
+    <img src="https://ppspl.com/admin/team/20250416181452.png" />
+    <h4>Ajit Joshi</h4>
+    <p>
+      Ajit holds a Bachelor's degree in Architecture (B.Arch.) and a
+      Master's degree in Business Administration (Marketing).
+      With over 30 years of experience, his expertise includes architectural
+      design, project management, business strategy, and market positioning.
+    </p>
+  </div>
+
+  <div class="card">
+    <img src="https://ppspl.com/admin/team/20250416180738.png" />
+    <h4>Rajendra Kulkarni</h4>
+    <p>
+      Rajendra is a gold medalist with strong expertise in precast
+      engineering, building systems, and project execution. He has
+      contributed to large-scale infrastructure and commercial projects.
+    </p>
+  </div>
+
+  <div class="card">
+    <img src="https://ppspl.com/admin/team/20250416181321.png" />
+    <h4>Dhananjay Bhosale</h4>
+    <p>
+      Dhananjay holds a Master's Degree in Structural Engineering and
+      specializes in design verification, structural audits, and
+      precast engineering solutions.
+    </p>
+  </div>
+
+  <div class="card">
+    <img src="https://ppspl.com/admin/team/20250416180932.png" />
+    <h4>Ramesh Raskar</h4>
+    <p>
+      Ramesh is an experienced civil engineering professional with
+      expertise in structural design, project management, and quality
+      assurance for complex engineering projects.
+    </p>
+  </div>
+
+</section>
+
+<section class="stats">
+  <div><h2>10000+</h2><p>Projects</p></div>
+  <div><h2>400+</h2><p>Specialists</p></div>
+  <div><h2>100+</h2><p>Happy Clients</p></div>
+  <div><h2>21+</h2><p>Years Experience</p></div>
+</section>
+
+<footer>
+  <p>© 2025 PPS Learning. All rights reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blogs | PPS</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  margin:0;
+  background:#f7f7f7;
+}
+
+/* BLOG CONTAINER */
+.blog-section{
+  max-width:1200px;
+  margin:60px auto;
+  padding:0 20px;
+}
+
+.blog-section h1{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+/* BLOG GRID */
+.blog-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+/* BLOG CARD */
+.blog-card{
+  background:#fff;
+  border-radius:8px;
+  overflow:hidden;
+  box-shadow:0 0 10px rgba(0,0,0,0.08);
+}
+
+.blog-card img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+}
+
+.blog-content{
+  padding:15px;
+}
+
+.blog-content h3{
+  font-size:16px;
+  margin-bottom:8px;
+}
+
+.blog-content p{
+  font-size:14px;
+  color:#555;
+  line-height:1.5;
+}
+
+.blog-content a{
+  display:inline-block;
+  margin-top:10px;
+  color:#0a66c2;
+  font-size:14px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .blog-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:600px){
+  .blog-grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<section class="blog-section">
+  <h1>Our Blogs</h1>
+
+  <div class="blog-grid">
+
+    <!-- BLOG 1 -->
+    <div class="blog-card">
+      <img src="https://picsum.photos/400/300?1">
+      <div class="blog-content">
+        <h3>Introduction to Precast Engineering</h3>
+        <p>Learn the fundamentals of precast concrete and its applications.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+
+    <!-- BLOG 2 -->
+    <div class="blog-card">
+      <img src="https://picsum.photos/400/300?2">
+      <div class="blog-content">
+        <h3>AutoCAD for Civil Engineers</h3>
+        <p>Essential AutoCAD skills every civil engineer must know.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+
+    <!-- BLOG 3 -->
+    <div class="blog-card">
+      <img src="https://picsum.photos/400/300?3">
+      <div class="blog-content">
+        <h3>BIM in Construction</h3>
+        <p>How BIM is transforming modern construction projects.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+
+    <!-- BLOG 4 -->
+    <div class="blog-card">
+      <img src="https://picsum.photos/400/300?4">
+      <div class="blog-content">
+        <h3>Revit Structure Basics</h3>
+        <p>Start your journey with Revit Structure step by step.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+
+    <!-- BLOG 5 -->
+    <div class="blog-card">
+      <img src="https://picsum.photos/400/300?5">
+      <div class="blog-content">
+        <h3>Site Execution Tips</h3>
+        <p>Best practices to improve on-site construction efficiency.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+
+    <!-- BLOG 6 -->
+    <div class="blog-card">
+      <img src="https://picsum.photos/400/300?6">
+      <div class="blog-content">
+        <h3>Structural Design Career Path</h3>
+        <p>Explore career opportunities in structural engineering.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
